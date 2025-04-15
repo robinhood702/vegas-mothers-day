@@ -3,126 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vegas Mother's Day Surprise</title>
-    <!-- Include Material Design CSS -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
-    <link rel="stylesheet" href="https://cdn.lineicons.com/5.0/lineicons.css" />
+    <title>Parallax Website</title>
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
+        body, html {
+            height: 100%;
             margin: 0;
-            padding: 0;
-            background-color: #f8f8f8;
-            color: #333;
-        }
-        .mdl-layout {
-            background-color: #f8f8f8;
-        }
-        .mdl-layout__content {
-            padding: 20px;
-            text-align: center;
-        }
-        .headline {
-            font-size: 2.0em;
-            font-weight: 700;
-            margin-top: 40px;
-            color: #ff4d4d;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-            line-height: 1.5; /* Improved line spacing */
-        }
-        .content {
-            padding: 30px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            margin: 20px auto;
-            max-width: 800px;
-        }
-        .content p {
-            font-size: 1.3em;
-            line-height: 1.7em;
-            color: #555;
-        }
-        .social-links {
-            margin-top: 30px;
-            margin-bottom: 20px; /* Added margin to create space below social links */
-            display: flex;
-            justify-content: center;
-        }
-        .social-links a {
-            text-decoration: none;
+            font-size: 18px;
             color: #fff;
-            font-weight: bold;
-            margin: 0 15px;
-            padding: 10px 20px;
-            background-color: #ff4d4d;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-            transition: background-color 0.3s ease;
-            display: inline-flex;
-            align-items: center;
-        }
-        .social-links a:hover {
-            background-color: #e60000;
-        }
-        .social-links i {
-            margin-right: 8px;
-        }
-        .header-image {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 20px auto; /* Added margin for spacing */
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        .nominate-headline {
-            font-size: 2.2em;
-            font-weight: 700;
-            margin-top: 30px;
-            color: #ff4d4d;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+            text-align: center;
+            font-family: 'Arial', sans-serif;
         }
 
-        /* Media Queries for Mobile Responsiveness */
-        @media (max-width: 768px) {
-            .content {
-                padding: 20px; /* Adjusted padding for smaller screens */
-                margin-left:auto;margin-right:auto;width:auto;max-width:auto;
-                text-align:center;
-            }
-            .header-image {
-                margin: 10px auto;
-            }
+        .parallax {
+            position: relative;
+            height: 100vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
+
+        .parallax-text {
+            font-size: 3em;
+            text-shadow: 2px 2px 4px #000000;
+        }
+        .parallax-text img {
+            max-width: 400px;
+        }
+
+        .section {
+            padding: 50px;
+            background-image: url('img/pattern.webp');
+            background-size: auto;
+        }
+        .section h2 {
+            color: #fff;
+        }
+        .step {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            color: #a4151c;
+            text-align: left;
+        }
+        .social-btn {
+  display: flex;
+  align-items: center;
+  background: #f24953;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background 0.2s;
+  color: #fff;
+  text-decoration: none;
+  max-width: 250px;   /* Set your desired max width here */
+  width: 100%;        /* Optional: makes the button fill its container up to max-width */
+  overflow: hidden;   /* Optional: hides overflowed content */
+  white-space: nowrap;/* Optional: prevents text from wrapping */
+}
+
+.social-btn:visited,
+.social-btn:active,
+.social-btn:hover,
+.social-btn:focus {
+  background: #f24953;
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-btn img {
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+  border-radius: 50%;
+}
+
+
     </style>
 </head>
 <body>
-    <div class="mdl-layout mdl-js-layout">
-        <main class="mdl-layout__content">
-            <div class="page-content">
-                <img src="https://pplx-res.cloudinary.com/image/upload/v1744483739/user_uploads/AjiugxkOZqBPWCI/IMG-20250411-WA0005.jpg" alt="Vegas Mother's Day" class="header-image">
-                <div class="headline">Nominate a Deserving Mom for a Vegas Mother's Day Surprise!</div>
-                <section class="content">
-                    <p>Robin Hood 702 is planning to surprise a deserving mom who has done something extra-special for her family, her community, a friend, or a loved one with an all-expense PAID trip to Las Vegas!</p>
-                    <p>More details to follow, so stay tuned for updates!</p>
-                    <p>Do you know a mom who has gone above and beyond? Here's your chance to give her the recognition she deserves!</p>
-                    
-                    <h2 class="nominate-headline">Nominate Now!</h2>
-                    
-                    <p><strong>FOLLOW US</strong> on our social media</p>
-                    <div class="social-links">
-                        <a href="https://x.com/robinhood702" target="_blank"><i class="lni lni-x"></i> @robinhood702</a>
-                        <a href="https://instagram.com/robinhoodvegas" target="_blank"><i class="lni lni-instagram"></i> @robinhoodvegas</a>
-                    </div>
-                    <p>Then, DM us your story of why your Mom deserves a Vegas Mother's Day surprise!</p>
-                </section>
-            </div>
-        </main>
+
+    <div class="parallax" style="background-image: url('https://pplx-res.cloudinary.com/image/upload/v1744686517/user_uploads/jhajfgXYcnxfFfC/assets_task_01jrvnm9yne8mrsskg9eww453f_img_0.jpg');">
+        <div class="parallax-text">
+            <img src="img/logo.png" />
+        </div>
     </div>
-    <!-- Include Material Design JS -->
-    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <!-- <div class="parallax" style="background-color: url('https://pplx-res.cloudinary.com/image/upload/v1744686519/user_uploads/yIuqKDNgNeQlEyZ/assets_task_01jrvnzhjvfbxbkyn26qhhsd3x_img_0.jpg');">
+    </div> -->
+
+    <div class="section" >
+        <h2>Nominate a Deserving Mom for a Vegas Mother's Day Surprise!</h2>
+
+        <div class="step">
+            <p>Robin Hood 702 is planning to surprise a deserving mom who has done something extra-special for her family, her community, a friend, or a loved one with an all-expense PAID trip to Las Vegas!</p>
+            <p>More details to follow, so stay tuned for updates!</p>
+            <p>Do you know a mom who has gone above and beyond? Here's your chance to give her the recognition she deserves!</p>
+        </div>
+
+        <div class="step">
+            <h3>STEP 1: FOLLOW OUR X AND INSTAGRAM</h3>
+            <a class="social-btn" href="https://www.instagram.com/robinhoodvegas">
+                <img src="img/instagram.png" alt="robinhoodvegas">
+                @robinhoodvegas
+            </a>
+              <a class="social-btn" href="https://x.com/robinhood702">
+                <img src="img/twitter.png" alt="X (Twitter)">
+                @robinhood702
+              </a>
+        </div>
+
+        <div class="step">
+            <h3>STEP 2: DM US</h3>
+            <p>DM us your story of why your Mom deserves a Vegas Mother's Day surprise!</p>
+        </div>
+    </div>
+
 </body>
 </html>
